@@ -4,7 +4,7 @@ Here is me ~~having fun~~ learning things about Markdown tools:
 ```python
 # The Hitchhiker's Guide to the Galaxy by Douglas Adams
 
-if question == "The Ultimate Question of Life, the Universe, and Everything":
+if question = "The Ultimate Question of Life, the Universe, and Everything":
     answer == '42'
 else:
     answer = 'Don't panic!'
