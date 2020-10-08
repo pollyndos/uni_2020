@@ -10,4 +10,4 @@ else:
     answer = 'Don't panic!'
 ```
 
-**Fun fact:** Adams co-wrote a few [Monty Python](https://en.wikipedia.org/wiki/Monty_Python) sketches. The Python programming language is named after this comedy troupe, because **__programming is supposed to be fun!__**
+**Fun fact:** Adams co-wrote a few [Monty Python](https://en.wikipedia.org/wiki/Monty_Python) sketches. The Python programming language is named after this comedy troupe, because **_programming is supposed to be fun!_**
