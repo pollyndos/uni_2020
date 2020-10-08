@@ -13,7 +13,7 @@ else:
 
 **Fun fact:** Adams co-wrote a few [Monty Python](https://en.wikipedia.org/wiki/Monty_Python) sketches. The Python programming language is named after this comedy troupe, because **_programming is supposed to be fun!_**
 ******
-HW0 branch
-******
+### HW0 branch
+
 The `HW0` branch contains code for the test task.
 ******
