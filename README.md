@@ -8,7 +8,7 @@ Here is me ~~having fun~~ learning things about Markdown tools:
 if question == "The Ultimate Question of Life, the Universe, and Everything":
     answer = '42'
 else:
-    answer = 'Don't panic!'
+    answer = "Don't panic!"
 ```
 
 **Fun fact:** Adams co-wrote a few [Monty Python](https://en.wikipedia.org/wiki/Monty_Python) sketches. The Python programming language is named after this comedy troupe, because **_programming is supposed to be fun!_**
