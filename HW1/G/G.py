@@ -1,3 +1,7 @@
 def solution(a, b):
-    ### YOUR CODE ###
-    return
+    result = a[:] # otherwise they will have the same id
+    for x in b:
+        if x not in a:
+            result.append(x)
+    return sorted(result)
+    

@@ -1,3 +1,5 @@
 def solution(n, k):
-    ### YOUR CODE HERE ###
-    return
+    # n = num of people, k = num of apples
+    each = k // n
+    left = k % n 
+    return each, left
