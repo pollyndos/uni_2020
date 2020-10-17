@@ -1,5 +1,5 @@
 # uni_2020
-### This repository is for Python course assighments.
+### This repository is for Python course assignments.
 *****
 Here is me ~~having fun~~ learning things about Markdown tools: 
 ```python
