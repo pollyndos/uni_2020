@@ -10,6 +10,9 @@ def squares():
 
 def take(n, gener):
     result = []
-    for i in range(n):
-        result.append(next(gener))
+    try:
+        for i in range(n):
+            result.append(next(gener))  
+    except StopIteration:
+        pass
     return result
