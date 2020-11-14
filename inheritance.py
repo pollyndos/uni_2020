@@ -35,19 +35,20 @@ class Animal:
         self.species_name = species_name
         # Animal.n_animals += 1
 
+    def __repr__(self):
+        return f'{self.species_name}'
+
 class Birds(Animal):
     def __init__(self, species_name, habitat, wingspan, feathers_colour):
         super().__init__(species_name, habitat)
         self.wingspan = wingspan
         self.feather_colour = feathers_colour
-
-    def __repr__(self):
-        return f'{self.species_name}'
-
+        
     def info_about_this_bird(self):
         return f'{self.species_name} is a bird. '\
                 f'It lives in the {self.habitat}. The colour of its feathers is {self.feather_colour} '\
                 f'and its wingspan is {self.wingspan} meters.'
+
 
 class Mammals(Animal):
     def __init__(self, species_name, habitat, duration_pregnancy, hair_colour):
@@ -55,34 +56,29 @@ class Mammals(Animal):
         self.duration_pregnancy = duration_pregnancy
         self.hair_colour = hair_colour
 
-    def __repr__(self):
-        return f'{self.species_name}'
-        
     def info_about_this_mammal(self):
         return f'{self.species_name} is a mammal. '\
                 f'It lives in the {self.habitat}. '\
                 f'The colour of its hair\\fur is {self.hair_colour}. '\
                 f'The pregnancy of this species usually lasts {self.duration_pregnancy} days.'
-    
+  
 class Reptiles(Animal):
     def __init__(self, species_name, habitat, n_heart_chambers, skin_colour):
         super().__init__(species_name, habitat)
         self.n_heart_chambers = n_heart_chambers
         self.skin_colour = skin_colour
 
-    def __repr__(self):
-        return f'{self.species_name}'
-    
     def info_about_this_reptile(self):
         return f'{self.species_name} is a reptile. '\
                 f'It lives in the {self.habitat}. '\
                f'The colour of its skin is {self.skin_colour}. '\
                f'The number of heart chambers is {self.n_heart_chambers}.'
-
+    
 def main():
                                                                                                                                              
     bird = Birds('chicken', 'farms',  0.5, 'yellow')
     print(bird.info_about_this_bird())
+    print(bird)
     
     mammal = Mammals('bear', 'forest', 245, 'brown')
     print(mammal.info_about_this_mammal())
