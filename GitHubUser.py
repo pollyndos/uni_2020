@@ -2,7 +2,7 @@ import requests
 import sys
 from collections import Counter
 
-token = '6e8846545917661a18a543899c2864483121fdbe'
+token = ''
 headers = {'Authorization': 'token ' + token}
 
 class GitHubUser:
