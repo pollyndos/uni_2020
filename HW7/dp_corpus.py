@@ -22,7 +22,7 @@ month2digit = {
 }
 
 def get_rubrics():
-    # получаем все рубрки, которые есть на сайте
+    # получаем список всех рубрик, которые есть на сайте
     main_page = requests.get('https://www.dp.ru/')
     main_page_soup = bs(main_page.content)
     rubrics = main_page_soup.find_all('h3', class_="menu__heading menu__heading_small")
@@ -32,7 +32,8 @@ def get_rubrics():
     return rubrics[:-3]
 
 def get_all_links(rubrics, date):
-    # получаем ссылки на статьи, которые на ходятся на странице рубрики
+    # получаем ссылки на все статьи до определенного месяуа, которые находятся на странице рубрики 
+    # на вход нужен список рубрик
     all_links = []
     
     for rubric in rubrics:
@@ -42,6 +43,7 @@ def get_all_links(rubrics, date):
             links = rubric_page_soup.find_all('a', class_="b-inline-article__preview")
             links = [link['href'] for link in links]
             all_links.extend(links)
+            # если в ссылке есть месяц, который мы указали, то прекращаем поиск
             if any(re.search(f'a/{date}', link) for link in links):
                 break
     # множество тк ссылки очень часто повторяются 
@@ -65,7 +67,7 @@ def corpus_ro_csv(links, name_csv):
         # получаем текст статьи 
         text = soup_dp.find('div', class_="b-article-stretched b-article-stretched_old-image-container b-article-stretched_main-preview")
         text = soup_dp.find_all('p')
-        text = ''.join([x.text for x in text])
+        text = ' '.join([x.text for x in text])
         # получаем заголовки статьи 
         headline = soup_dp.find('h1', class_="b-article__heading").text.strip()
         # записываем всю информацию с csv
