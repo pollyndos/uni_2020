@@ -1,15 +1,4 @@
 # uni_2020
 ### This repository for Python course assighments.
 *****
-Here is me ~~having fun~~ learning things about Markdown tools: 
-```python
-# The Hitchhiker's Guide to the Galaxy by Douglas Adams
-
-if question == "The Ultimate Question of Life, the Universe, and Everything":
-    answer = '42'
-else:
-    answer = 'Don't panic!'
-```
-
-**Fun fact:** Adams co-wrote a few [Monty Python](https://en.wikipedia.org/wiki/Monty_Python) sketches. The Python programming language is named after this comedy troupe, because **_programming is supposed to be fun!_**
-******
+Ссылка на корпус (Деловой Петербург, рубрика Новости СПб, с октября 2020 по октябрь 2019) — https://drive.google.com/file/d/1eOx8yEIwTH9JmlEN4afRDsXoYFB5LVWF/
